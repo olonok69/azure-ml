@@ -1,0 +1,11 @@
+channels:
+- conda-forge
+dependencies:
+- python=3.6.2
+- pip:
+  - azureml-defaults
+  - azureml-opendatasets
+  - chainer==5.1.0
+  - cupy-cuda90==5.1.0
+  - mpi4py==3.0.0
+  - pytest
