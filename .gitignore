@@ -5,3 +5,4 @@ ml-frameworks/keras/data/train-labels-idx1-ubyte.gz
 batch-data/*.*
 *.pkl
 *.gz
+*.csv
