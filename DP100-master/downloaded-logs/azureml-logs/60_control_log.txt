@@ -1,0 +1,201 @@
+[2021-11-11T09:45:14.967324] Using urllib.request Python 3.0 or later
+Streaming log file azureml-logs/60_control_log.txt
+Running: ['cmd.exe', '/c', 'C:\\Users\\User\\AppData\\Local\\Temp\\azureml_runs\\diabetes-experiment_1636623911_58552b7f\\azureml-environment-setup/conda_env_checker.bat']
+Starting the daemon thread to refresh tokens in background for process with pid = 7676
+Materialized conda environment not found on target: C:\Users\User/.azureml/envs/azureml_da3e97fcb51801118b8e80207f3e01ad
+
+
+[2021-11-11T09:45:15.196521] Logging experiment preparation status in history service.
+Running: ['cmd.exe', '/c', 'C:\\Users\\User\\AppData\\Local\\Temp\\azureml_runs\\diabetes-experiment_1636623911_58552b7f\\azureml-environment-setup/conda_env_builder.bat']
+Running: ['conda', '--version']
+conda 4.9.2
+
+Creating conda environment...
+Running: ['conda', 'env', 'create', '-p', 'C:\\Users\\User/.azureml/envs/azureml_da3e97fcb51801118b8e80207f3e01ad', '-f', 'azureml-environment-setup/mutated_conda_dependencies.yml']
+Warning: you have pip-installed dependencies in your environment file, but you do not list pip itself as one of your conda dependencies.  Conda may not use the correct pip to install your packages, and they may end up in the wrong place.  Please add an explicit pip dependency.  I'm adding one for you, but still nagging you.
+Collecting package metadata (repodata.json): ...working... done
+Solving environment: ...working... done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 4.9.2
+  latest version: 4.10.3
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+Preparing transaction: ...working... done
+Verifying transaction: ...working... done
+Executing transaction: ...working... done
+Installing pip dependencies: ...working... Ran pip subprocess with arguments:
+['C:\\Users\\User\\.azureml\\envs\\azureml_da3e97fcb51801118b8e80207f3e01ad\\python.exe', '-m', 'pip', 'install', '-U', '-r', 'C:\\Users\\User\\AppData\\Local\\Temp\\azureml_runs\\diabetes-experiment_1636623911_58552b7f\\azureml-environment-setup\\condaenv.nokb19cl.requirements.txt']
+Pip subprocess output:
+Collecting azureml-defaults
+  Using cached azureml_defaults-1.36.0-py3-none-any.whl (3.0 kB)
+Collecting azureml-core~=1.36.0
+  Using cached azureml_core-1.36.0.post1-py3-none-any.whl (2.4 MB)
+Collecting azureml-inference-server-http~=0.4.1
+  Using cached azureml_inference_server_http-0.4.1-py3-none-any.whl (38 kB)
+Processing c:\users\user\appdata\local\pip\cache\wheels\e2\1d\52\535a274b9c2ce7d4064838f2bdb62013801281ef7d7f21e2ee\json_logging_py-0.2-py3-none-any.whl
+Collecting configparser==3.7.4
+  Using cached configparser-3.7.4-py2.py3-none-any.whl (22 kB)
+Collecting azureml-dataset-runtime[fuse]~=1.36.0
+  Using cached azureml_dataset_runtime-1.36.0-py3-none-any.whl (3.5 kB)
+Collecting SecretStorage<4.0.0
+  Using cached SecretStorage-3.3.1-py3-none-any.whl (15 kB)
+Collecting PyJWT<3.0.0
+  Using cached PyJWT-2.3.0-py3-none-any.whl (16 kB)
+Collecting adal<=1.2.7,>=1.2.0
+  Using cached adal-1.2.7-py2.py3-none-any.whl (55 kB)
+Collecting azure-common<2.0.0,>=1.1.12
+  Using cached azure_common-1.1.27-py2.py3-none-any.whl (12 kB)
+Collecting ndg-httpsclient<=0.5.1
+  Using cached ndg_httpsclient-0.5.1-py3-none-any.whl (34 kB)
+Collecting contextlib2<22.0.0
+  Using cached contextlib2-21.6.0-py2.py3-none-any.whl (13 kB)
+Collecting azure-mgmt-authorization<1.0.0,>=0.40.0
+  Using cached azure_mgmt_authorization-0.61.0-py2.py3-none-any.whl (94 kB)
+Collecting azure-mgmt-resource<15.0.0,>=1.2.1
+  Using cached azure_mgmt_resource-13.0.0-py2.py3-none-any.whl (1.3 MB)
+Requirement already satisfied, skipping upgrade: python-dateutil<3.0.0,>=2.7.3 in c:\users\user\appdata\roaming\python\python36\site-packages (from azureml-core~=1.36.0->azureml-defaults->-r C:\Users\User\AppData\Local\Temp\azureml_runs\diabetes-experiment_1636623911_58552b7f\azureml-environment-setup\condaenv.nokb19cl.requirements.txt (line 1)) (2.8.1)
+Collecting msrestazure<=0.6.4,>=0.4.33
+  Using cached msrestazure-0.6.4-py2.py3-none-any.whl (40 kB)
+Collecting backports.tempfile
+  Using cached backports.tempfile-1.0-py2.py3-none-any.whl (4.4 kB)
+Collecting azure-mgmt-keyvault<10.0.0,>=0.40.0
+  Using cached azure_mgmt_keyvault-9.2.0-py2.py3-none-any.whl (412 kB)
+Collecting jmespath<1.0.0
+  Using cached jmespath-0.10.0-py2.py3-none-any.whl (24 kB)
+Collecting pathspec<1.0.0
+  Using cached pathspec-0.9.0-py2.py3-none-any.whl (31 kB)
+Collecting jsonpickle<3.0.0
+  Using cached jsonpickle-2.0.0-py2.py3-none-any.whl (37 kB)
+Collecting cryptography!=1.9,!=2.0.*,!=2.1.*,!=2.2.*,<4.0.0
+  Using cached cryptography-3.4.8-cp36-abi3-win_amd64.whl (1.6 MB)
+Collecting pyopenssl<21.0.0
+  Using cached pyOpenSSL-20.0.1-py2.py3-none-any.whl (54 kB)
+Collecting azure-graphrbac<1.0.0,>=0.40.0
+  Using cached azure_graphrbac-0.61.1-py2.py3-none-any.whl (141 kB)
+Collecting azure-mgmt-containerregistry>=2.0.0
+  Using cached azure_mgmt_containerregistry-8.2.0-py2.py3-none-any.whl (928 kB)
+Collecting docker<6.0.0
+  Using cached docker-5.0.3-py2.py3-none-any.whl (146 kB)
+Requirement already satisfied, skipping upgrade: requests<3.0.0,>=2.19.1 in c:\users\user\appdata\roaming\python\python36\site-packages (from azureml-core~=1.36.0->azureml-defaults->-r C:\Users\User\AppData\Local\Temp\azureml_runs\diabetes-experiment_1636623911_58552b7f\azureml-environment-setup\condaenv.nokb19cl.requirements.txt (line 1)) (2.26.0)
+Requirement already satisfied, skipping upgrade: urllib3<=1.26.7,>=1.23 in c:\users\user\appdata\roaming\python\python36\site-packages (from azureml-core~=1.36.0->azureml-defaults->-r C:\Users\User\AppData\Local\Temp\azureml_runs\diabetes-experiment_1636623911_58552b7f\azureml-environment-setup\condaenv.nokb19cl.requirements.txt (line 1)) (1.26.7)
+Collecting azure-mgmt-storage<16.0.0,>=1.5.0
+  Using cached azure_mgmt_storage-11.2.0-py2.py3-none-any.whl (547 kB)
+Collecting msrest<1.0.0,>=0.5.1
+  Using cached msrest-0.6.21-py2.py3-none-any.whl (85 kB)
+Requirement already satisfied, skipping upgrade: pytz in c:\users\user\appdata\roaming\python\python36\site-packages (from azureml-core~=1.36.0->azureml-defaults->-r C:\Users\User\AppData\Local\Temp\azureml_runs\diabetes-experiment_1636623911_58552b7f\azureml-environment-setup\condaenv.nokb19cl.requirements.txt (line 1)) (2021.1)
+Collecting waitress==2.0.0; platform_system == "Windows"
+  Using cached waitress-2.0.0-py3-none-any.whl (56 kB)
+Collecting inference-schema==1.3.0
+  Using cached inference_schema-1.3.0-py3-none-any.whl (19 kB)
+Collecting psutil==5.8.0; platform_system == "Windows"
+  Using cached psutil-5.8.0-cp36-cp36m-win_amd64.whl (244 kB)
+Collecting applicationinsights>=0.11.7
+  Using cached applicationinsights-0.11.10-py2.py3-none-any.whl (55 kB)
+Collecting flask==1.0.3
+  Using cached Flask-1.0.3-py2.py3-none-any.whl (92 kB)
+Collecting pyarrow<4.0.0,>=0.17.0
+  Using cached pyarrow-3.0.0-cp36-cp36m-win_amd64.whl (12.6 MB)
+Collecting azureml-dataprep<2.25.0a,>=2.24.0a
+  Using cached azureml_dataprep-2.24.0-py3-none-any.whl (39.4 MB)
+Requirement already satisfied, skipping upgrade: numpy!=1.19.4; sys_platform == "win32" in c:\users\user\appdata\roaming\python\python36\site-packages (from azureml-dataset-runtime[fuse]~=1.36.0->azureml-defaults->-r C:\Users\User\AppData\Local\Temp\azureml_runs\diabetes-experiment_1636623911_58552b7f\azureml-environment-setup\condaenv.nokb19cl.requirements.txt (line 1)) (1.19.5)
+Processing c:\users\user\appdata\local\pip\cache\wheels\21\5c\83\1dd7e8a232d12227e5410120f4374b33adeb4037473105b079\fusepy-3.0.1-py3-none-any.whl
+Collecting jeepney>=0.6
+  Using cached jeepney-0.7.1-py3-none-any.whl (54 kB)
+Requirement already satisfied, skipping upgrade: pyasn1>=0.1.1 in c:\users\user\appdata\roaming\python\python36\site-packages (from ndg-httpsclient<=0.5.1->azureml-core~=1.36.0->azureml-defaults->-r C:\Users\User\AppData\Local\Temp\azureml_runs\diabetes-experiment_1636623911_58552b7f\azureml-environment-setup\condaenv.nokb19cl.requirements.txt (line 1)) (0.4.8)
+Requirement already satisfied, skipping upgrade: six>=1.5 in c:\users\user\appdata\roaming\python\python36\site-packages (from python-dateutil<3.0.0,>=2.7.3->azureml-core~=1.36.0->azureml-defaults->-r C:\Users\User\AppData\Local\Temp\azureml_runs\diabetes-experiment_1636623911_58552b7f\azureml-environment-setup\condaenv.nokb19cl.requirements.txt (line 1)) (1.15.0)
+Collecting backports.weakref
+  Using cached backports.weakref-1.0.post1-py2.py3-none-any.whl (5.2 kB)
+Collecting azure-mgmt-core<2.0.0,>=1.2.0
+  Using cached azure_mgmt_core-1.3.0-py2.py3-none-any.whl (25 kB)
+Requirement already satisfied, skipping upgrade: importlib-metadata; python_version < "3.8" in c:\users\user\appdata\roaming\python\python36\site-packages (from jsonpickle<3.0.0->azureml-core~=1.36.0->azureml-defaults->-r C:\Users\User\AppData\Local\Temp\azureml_runs\diabetes-experiment_1636623911_58552b7f\azureml-environment-setup\condaenv.nokb19cl.requirements.txt (line 1)) (4.8.1)
+Requirement already satisfied, skipping upgrade: cffi>=1.12 in c:\users\user\appdata\roaming\python\python36\site-packages (from cryptography!=1.9,!=2.0.*,!=2.1.*,!=2.2.*,<4.0.0->azureml-core~=1.36.0->azureml-defaults->-r C:\Users\User\AppData\Local\Temp\azureml_runs\diabetes-experiment_1636623911_58552b7f\azureml-environment-setup\condaenv.nokb19cl.requirements.txt (line 1)) (1.14.6)
+Collecting pywin32==227; sys_platform == "win32"
+  Using cached pywin32-227-cp36-cp36m-win_amd64.whl (9.1 MB)
+Collecting websocket-client>=0.32.0
+  Using cached websocket_client-1.2.1-py2.py3-none-any.whl (52 kB)
+Requirement already satisfied, skipping upgrade: idna<4,>=2.5; python_version >= "3" in c:\users\user\appdata\roaming\python\python36\site-packages (from requests<3.0.0,>=2.19.1->azureml-core~=1.36.0->azureml-defaults->-r C:\Users\User\AppData\Local\Temp\azureml_runs\diabetes-experiment_1636623911_58552b7f\azureml-environment-setup\condaenv.nokb19cl.requirements.txt (line 1)) (3.2)
+Requirement already satisfied, skipping upgrade: charset-normalizer~=2.0.0; python_version >= "3" in c:\users\user\appdata\roaming\python\python36\site-packages (from requests<3.0.0,>=2.19.1->azureml-core~=1.36.0->azureml-defaults->-r C:\Users\User\AppData\Local\Temp\azureml_runs\diabetes-experiment_1636623911_58552b7f\azureml-environment-setup\condaenv.nokb19cl.requirements.txt (line 1)) (2.0.6)
+Requirement already satisfied, skipping upgrade: certifi>=2017.4.17 in c:\users\user\appdata\roaming\python\python36\site-packages (from requests<3.0.0,>=2.19.1->azureml-core~=1.36.0->azureml-defaults->-r C:\Users\User\AppData\Local\Temp\azureml_runs\diabetes-experiment_1636623911_58552b7f\azureml-environment-setup\condaenv.nokb19cl.requirements.txt (line 1)) (2021.5.30)
+Collecting isodate>=0.6.0
+  Using cached isodate-0.6.0-py2.py3-none-any.whl (45 kB)
+Requirement already satisfied, skipping upgrade: requests-oauthlib>=0.5.0 in c:\users\user\appdata\roaming\python\python36\site-packages (from msrest<1.0.0,>=0.5.1->azureml-core~=1.36.0->azureml-defaults->-r C:\Users\User\AppData\Local\Temp\azureml_runs\diabetes-experiment_1636623911_58552b7f\azureml-environment-setup\condaenv.nokb19cl.requirements.txt (line 1)) (1.3.0)
+Processing c:\users\user\appdata\local\pip\cache\wheels\32\42\7f\23cae9ff6ef66798d00dc5d659088e57dbba01566f6c60db63\wrapt-1.12.1-cp36-cp36m-win_amd64.whl
+Collecting itsdangerous>=0.24
+  Using cached itsdangerous-2.0.1-py3-none-any.whl (18 kB)
+Requirement already satisfied, skipping upgrade: Werkzeug>=0.14 in c:\users\user\appdata\roaming\python\python36\site-packages (from flask==1.0.3->azureml-inference-server-http~=0.4.1->azureml-defaults->-r C:\Users\User\AppData\Local\Temp\azureml_runs\diabetes-experiment_1636623911_58552b7f\azureml-environment-setup\condaenv.nokb19cl.requirements.txt (line 1)) (2.0.1)
+Requirement already satisfied, skipping upgrade: Jinja2>=2.10 in c:\users\user\appdata\roaming\python\python36\site-packages (from flask==1.0.3->azureml-inference-server-http~=0.4.1->azureml-defaults->-r C:\Users\User\AppData\Local\Temp\azureml_runs\diabetes-experiment_1636623911_58552b7f\azureml-environment-setup\condaenv.nokb19cl.requirements.txt (line 1)) (3.0.2)
+Requirement already satisfied, skipping upgrade: click>=5.1 in c:\users\user\appdata\roaming\python\python36\site-packages (from flask==1.0.3->azureml-inference-server-http~=0.4.1->azureml-defaults->-r C:\Users\User\AppData\Local\Temp\azureml_runs\diabetes-experiment_1636623911_58552b7f\azureml-environment-setup\condaenv.nokb19cl.requirements.txt (line 1)) (7.1.2)
+Collecting dotnetcore2<3.0.0,>=2.1.14
+  Using cached dotnetcore2-2.1.21-py3-none-win_amd64.whl (29.8 MB)
+Collecting azureml-dataprep-rslex~=2.0.0dev0
+  Downloading azureml_dataprep_rslex-2.0.0-cp36-cp36m-win_amd64.whl (9.7 MB)
+Collecting azure-identity==1.7.0
+  Using cached azure_identity-1.7.0-py2.py3-none-any.whl (129 kB)
+Collecting cloudpickle<2.0.0,>=1.1.0
+  Using cached cloudpickle-1.6.0-py3-none-any.whl (23 kB)
+Collecting azureml-dataprep-native<39.0.0,>=38.0.0
+  Using cached azureml_dataprep_native-38.0.0-cp36-cp36m-win_amd64.whl (889 kB)
+Collecting azure-core<2.0.0,>=1.15.0
+  Using cached azure_core-1.20.1-py2.py3-none-any.whl (177 kB)
+Requirement already satisfied, skipping upgrade: zipp>=0.5 in c:\users\user\appdata\roaming\python\python36\site-packages (from importlib-metadata; python_version < "3.8"->jsonpickle<3.0.0->azureml-core~=1.36.0->azureml-defaults->-r C:\Users\User\AppData\Local\Temp\azureml_runs\diabetes-experiment_1636623911_58552b7f\azureml-environment-setup\condaenv.nokb19cl.requirements.txt (line 1)) (3.6.0)
+Requirement already satisfied, skipping upgrade: typing-extensions>=3.6.4; python_version < "3.8" in c:\users\user\appdata\roaming\python\python36\site-packages (from importlib-metadata; python_version < "3.8"->jsonpickle<3.0.0->azureml-core~=1.36.0->azureml-defaults->-r C:\Users\User\AppData\Local\Temp\azureml_runs\diabetes-experiment_1636623911_58552b7f\azureml-environment-setup\condaenv.nokb19cl.requirements.txt (line 1)) (3.10.0.2)
+Requirement already satisfied, skipping upgrade: pycparser in c:\users\user\appdata\roaming\python\python36\site-packages (from cffi>=1.12->cryptography!=1.9,!=2.0.*,!=2.1.*,!=2.2.*,<4.0.0->azureml-core~=1.36.0->azureml-defaults->-r C:\Users\User\AppData\Local\Temp\azureml_runs\diabetes-experiment_1636623911_58552b7f\azureml-environment-setup\condaenv.nokb19cl.requirements.txt (line 1)) (2.20)
+Requirement already satisfied, skipping upgrade: oauthlib>=3.0.0 in c:\users\user\appdata\roaming\python\python36\site-packages (from requests-oauthlib>=0.5.0->msrest<1.0.0,>=0.5.1->azureml-core~=1.36.0->azureml-defaults->-r C:\Users\User\AppData\Local\Temp\azureml_runs\diabetes-experiment_1636623911_58552b7f\azureml-environment-setup\condaenv.nokb19cl.requirements.txt (line 1)) (3.1.1)
+Requirement already satisfied, skipping upgrade: dataclasses; python_version < "3.7" in c:\users\user\appdata\roaming\python\python36\site-packages (from Werkzeug>=0.14->flask==1.0.3->azureml-inference-server-http~=0.4.1->azureml-defaults->-r C:\Users\User\AppData\Local\Temp\azureml_runs\diabetes-experiment_1636623911_58552b7f\azureml-environment-setup\condaenv.nokb19cl.requirements.txt (line 1)) (0.8)
+Requirement already satisfied, skipping upgrade: MarkupSafe>=2.0 in c:\users\user\appdata\roaming\python\python36\site-packages (from Jinja2>=2.10->flask==1.0.3->azureml-inference-server-http~=0.4.1->azureml-defaults->-r C:\Users\User\AppData\Local\Temp\azureml_runs\diabetes-experiment_1636623911_58552b7f\azureml-environment-setup\condaenv.nokb19cl.requirements.txt (line 1)) (2.0.1)
+Collecting distro>=1.2.0
+  Using cached distro-1.6.0-py2.py3-none-any.whl (19 kB)
+Collecting msal-extensions~=0.3.0
+  Using cached msal_extensions-0.3.0-py2.py3-none-any.whl (16 kB)
+Collecting msal<2.0.0,>=1.12.0
+  Using cached msal-1.16.0-py2.py3-none-any.whl (78 kB)
+Collecting portalocker~=1.6; platform_system == "Windows"
+  Using cached portalocker-1.7.1-py2.py3-none-any.whl (10 kB)
+Installing collected packages: cryptography, jeepney, SecretStorage, PyJWT, adal, azure-common, pyopenssl, ndg-httpsclient, contextlib2, isodate, msrest, msrestazure, azure-mgmt-authorization, azure-mgmt-resource, backports.weakref, backports.tempfile, azure-core, azure-mgmt-core, azure-mgmt-keyvault, jmespath, pathspec, jsonpickle, azure-graphrbac, azure-mgmt-containerregistry, pywin32, websocket-client, docker, azure-mgmt-storage, azureml-core, waitress, wrapt, inference-schema, psutil, applicationinsights, itsdangerous, flask, azureml-inference-server-http, json-logging-py, configparser, pyarrow, distro, dotnetcore2, azureml-dataprep-rslex, msal, portalocker, msal-extensions, azure-identity, cloudpickle, azureml-dataprep-native, azureml-dataprep, fusepy, azureml-dataset-runtime, azureml-defaults
+  Attempting uninstall: pywin32
+    Found existing installation: pywin32 301
+    Uninstalling pywin32-301:
+      Successfully uninstalled pywin32-301
+  Attempting uninstall: cloudpickle
+    Found existing installation: cloudpickle 2.0.0
+    Uninstalling cloudpickle-2.0.0:
+      Successfully uninstalled cloudpickle-2.0.0
+Successfully installed PyJWT-2.3.0 SecretStorage-3.3.1 adal-1.2.7 applicationinsights-0.11.10 azure-common-1.1.27 azure-core-1.20.1 azure-graphrbac-0.61.1 azure-identity-1.7.0 azure-mgmt-authorization-0.61.0 azure-mgmt-containerregistry-8.2.0 azure-mgmt-core-1.3.0 azure-mgmt-keyvault-9.2.0 azure-mgmt-resource-13.0.0 azure-mgmt-storage-11.2.0 azureml-core-1.36.0.post1 azureml-dataprep-2.24.0 azureml-dataprep-native-38.0.0 azureml-dataprep-rslex-2.0.0 azureml-dataset-runtime-1.36.0 azureml-defaults-1.36.0 azureml-inference-server-http-0.4.1 backports.tempfile-1.0 backports.weakref-1.0.post1 cloudpickle-1.6.0 configparser-3.7.4 contextlib2-21.6.0 cryptography-3.4.8 distro-1.6.0 docker-5.0.3 dotnetcore2-2.1.21 flask-1.0.3 fusepy-3.0.1 inference-schema-1.3.0 isodate-0.6.0 itsdangerous-2.0.1 jeepney-0.7.1 jmespath-0.10.0 json-logging-py-0.2 jsonpickle-2.0.0 msal-1.16.0 msal-extensions-0.3.0 msrest-0.6.21 msrestazure-0.6.4 ndg-httpsclient-0.5.1 pathspec-0.9.0 portalocker-1.7.1 psutil-5.8.0 pyarrow-3.0.0 pyopenssl-20.0.1 pywin32-227 waitress-2.0.0 websocket-client-1.2.1 wrapt-1.12.1
+
+done
+#
+# To activate this environment, use
+#
+#     $ conda activate C:\Users\User\.azureml\envs\azureml_da3e97fcb51801118b8e80207f3e01ad
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+
+
+
+
+Running: ['C:\\Users\\User/.azureml/envs/azureml_da3e97fcb51801118b8e80207f3e01ad/python.exe', 'azureml-setup/run_script.py', '$USERPROFILE/.azureml/envs/azureml_da3e97fcb51801118b8e80207f3e01ad/python.exe', 'azureml-setup/context_manager_injector.py', '-i', 'ProjectPythonPath:context_managers.ProjectPythonPath', '-i', 'RunHistory:context_managers.RunHistory', '-i', 'TrackUserError:context_managers.TrackUserError', 'diabetes_experiment.py']
+[2021-11-11T09:47:13.501316] Logging experiment running status in history service.
+Streaming log file azureml-logs/70_driver_log.txt
+Starting the daemon thread to refresh tokens in background for process with pid = 23812
+Script process exited with code 0
+Uploading driver log...
+Finalizing run...
+[2021-11-11T09:47:30.037937] get vm size and vm region successfully.
+[2021-11-11T09:47:30.049085] get compute meta data successfully.
+[2021-11-11T09:47:30.439080] post artifact meta request successfully.
+[2021-11-11T09:47:30.715811] upload compute record artifact successfully.
+
+Script process exited with code 0
+
+
+
+Uploading control log...
